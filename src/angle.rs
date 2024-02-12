@@ -1,9 +1,10 @@
 use crate::Unit;
 use core::f64::consts::PI;
 
-create_unit_type!(Radians, 1.0, String::from("Angle"));
-create_unit_type!(Degrees, 180.0 / PI, String::from("Angle"));
-create_unit_type!(Rotations, 1.0 / (PI * 2.0), String::from("Angle"));
+pub enum Angle {}
+create_unit_type!(Radians, 1.0, Angle);
+create_unit_type!(Degrees, 180.0 / PI, Angle);
+create_unit_type!(Rotations, 1.0 / (PI * 2.0), Angle);
 
 #[cfg(test)]
 mod tests {

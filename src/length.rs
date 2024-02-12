@@ -1,10 +1,11 @@
 use crate::Unit;
 
-create_unit_type!(Kilometres, 0.001, String::from("Length"));
-create_unit_type!(Metres, 1.0, String::from("Length"));
-create_unit_type!(Decimetres, 10.0, String::from("Length"));
-create_unit_type!(Centimetres, 100.0, String::from("Length"));
-create_unit_type!(Millimetres, 1000.0, String::from("Length"));
+pub enum Length{}
+create_unit_type!(Kilometres, 0.001, Length);
+create_unit_type!(Metres, 1.0, Length);
+create_unit_type!(Decimetres, 10.0, Length);
+create_unit_type!(Centimetres, 100.0, Length);
+create_unit_type!(Millimetres, 1000.0, Length);
 
 #[cfg(test)]
 mod tests {
