@@ -37,7 +37,7 @@ mod tests {
         #[test]
         fn as_si_test() {
             let degrees = Degrees::new(180.0);
-            assert_eq!(PI , degrees.get_as_si());
+            assert_eq!(PI, degrees.get_as_si());
         }
 
         #[test]
@@ -60,7 +60,7 @@ mod tests {
         #[test]
         fn as_si_test() {
             let rotations = Rotations::new(0.5);
-            assert_eq!(PI , rotations.get_as_si());
+            assert_eq!(PI, rotations.get_as_si());
         }
 
         #[test]
