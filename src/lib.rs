@@ -1,6 +1,3 @@
-/// The PI constant used by the library.
-pub const PI: f64 = 3.141592653589;
-
 /// The Unit trait for creating all unit types from.
 pub trait Unit {
     /// The conversion factor to the SI unit.

@@ -1,4 +1,5 @@
-use crate::{Unit, PI};
+use crate::Unit;
+use core::f64::consts::PI;
 
 create_unit_type!(Radians, 0.0, String::from("Angle"));
 create_unit_type!(Degrees, PI / 180.0, String::from("Angle"));
