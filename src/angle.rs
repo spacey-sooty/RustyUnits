@@ -8,7 +8,7 @@ create_unit_type!(Rotations, 1.0 / (PI * 2.0), String::from("Angle"));
 #[cfg(test)]
 mod tests {
     mod radians {
-        use crate::angle::{Degrees, Radians, Rotations, Unit};
+        use crate::angle::*;
         use core::f64::consts::PI;
 
         #[test]
@@ -31,7 +31,7 @@ mod tests {
     }
 
     mod degrees {
-        use crate::angle::{Degrees, Radians, Rotations, Unit};
+        use crate::angle::*;
         use core::f64::consts::PI;
 
         #[test]
@@ -54,7 +54,7 @@ mod tests {
     }
 
     mod rotations {
-        use crate::angle::{Degrees, Radians, Rotations, Unit};
+        use crate::angle::*;
         use core::f64::consts::PI;
 
         #[test]
