@@ -38,9 +38,7 @@ macro_rules! create_unit_type {
             }
 
             fn new(value: f64) -> Self {
-                Self {
-                    value
-                }
+                Self { value }
             }
         }
     };
