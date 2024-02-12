@@ -1,6 +1,6 @@
 use crate::Unit;
 
-pub enum Length{}
+pub enum Length {}
 create_unit_type!(Kilometres, 0.001, Length);
 create_unit_type!(Metres, 1.0, Length);
 create_unit_type!(Decimetres, 10.0, Length);
