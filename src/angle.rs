@@ -29,4 +29,50 @@ mod tests {
             assert_eq!(180.0, rads.convert::<Degrees>().value);
         }
     }
+
+    mod degrees {
+        use crate::angle::{Degrees, Radians, Rotations, Unit};
+        use core::f64::consts::PI;
+
+        #[test]
+        fn as_si_test() {
+            let degrees = Degrees::new(180.0);
+            assert_eq!(PI , degrees.get_as_si());
+        }
+
+        #[test]
+        fn rotation_conversion_test() {
+            let degrees = Degrees::new(180.0);
+            assert_eq!(0.5, degrees.convert::<Rotations>().value);
+        }
+
+        #[test]
+        fn radians_conversion_test() {
+            let degrees = Degrees::new(180.0);
+            assert_eq!(PI, degrees.convert::<Radians>().value);
+        }
+    }
+
+    mod rotations {
+        use crate::angle::{Degrees, Radians, Rotations, Unit};
+        use core::f64::consts::PI;
+
+        #[test]
+        fn as_si_test() {
+            let rotations = Rotations::new(0.5);
+            assert_eq!(PI , rotations.get_as_si());
+        }
+
+        #[test]
+        fn degrees_conversion_test() {
+            let rotations = Rotations::new(0.5);
+            assert_eq!(180.0, rotations.convert::<Degrees>().value);
+        }
+
+        #[test]
+        fn radians_conversion_test() {
+            let rotations = Rotations::new(0.5);
+            assert_eq!(PI, rotations.convert::<Radians>().value);
+        }
+    }
 }

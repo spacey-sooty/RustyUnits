@@ -34,7 +34,7 @@ macro_rules! create_unit_type {
             }
 
             fn get_as_si(&self) -> f64 {
-                self.value * $conversion_factor
+                self.value / $conversion_factor
             }
 
             fn new(value: f64) -> Self {
