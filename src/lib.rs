@@ -1,3 +1,5 @@
+#![no_std]
+
 /// The Unit trait for creating all unit types from.
 pub trait Unit<U> {
     /// The conversion factor to the SI unit.
