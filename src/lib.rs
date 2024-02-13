@@ -39,3 +39,4 @@ macro_rules! create_unit_type {
 
 pub mod angle;
 pub mod length;
+pub mod time;
